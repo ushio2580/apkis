@@ -12,7 +12,7 @@ from langchain.utilities import WikipediaAPIWrapper
 os.environ['OPENAI_API_KEY'] = apikey
 
 # App framework
-st.title('🦜🔗 YouTube GPT Creator')
+st.title('🔎💻影片 GPT script🔎💻')
 prompt = st.text_input('Plug in your prompt here') 
 
 # Prompt templates
