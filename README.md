@@ -101,4 +101,27 @@ chmod +x testing.sh
 ```bash
 ./webui.sh --listen --api
 ```
+# TORCHCHAT+PYTHORCH ~
+```bash
+git clone https://github.com/pytorch/torchchat.git
+cd torchchat
+python3 -m venv .venv
+source .venv/bin/activate
+./install/install_requirements.sh
+```
+```bash
+python3 torchchat.py --help
+```
+# Download Model 
+```bash
+python3 torchchat.py download open-llama
+```
+# Testing Model
+```bash
+python3 torchchat.py generate open-llama --prompt "write me a story about a boy and his bear"
+```
+# Run Streamlit
+```bash
+streamlit run torchchat/usages/browser.py
+```
 
