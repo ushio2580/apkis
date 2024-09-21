@@ -1,4 +1,5 @@
-Installation For WSL + DOCKER+ WEBUI
+
+# Installation For WSL + DOCKER+ WEBUI:
 
 ```bash
 wsl -d ubuntu
@@ -8,7 +9,8 @@ sudp apt update
 sudo apt upgrade -y
 curl -fsSL https://ollama.com/install.sh | sh
 ```
-#to check resources de video
+
+# to check resources de video
 ```bash
 watch -n 0.5 nvidia-smi
 ```
@@ -38,12 +40,14 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 ```bash
 sudo docker run -d --network=host -v open-webui:/app/backend/data -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui --restart always ghcr.io/open-webui/open-webui:main
 ```
-#Check the docker
+
+# Check the docker
 ```bash
 sudo docker ps
 ```
 
-#Install Pyenv prereqs
+
+# Install Pyenv prereqs
 ```bash
 sudo apt install -y make build-essential libssl-dev zlib1g-dev \
 libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev \
@@ -52,7 +56,8 @@ libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev git
 
 
 ```bash
-#Install Pyenv
+
+# Install Pyenv
 curl https://pyenv.run | bash
 ```
 
@@ -62,7 +67,8 @@ export PYENV_ROOT="$HOME/.pyenv"
 eval "$(pyenv init -)"
 ```
 
-#reefresh terminal
+
+# refresh terminal
 ```bash
 source .bashrc
 ```
@@ -71,7 +77,8 @@ source .bashrc
 pyenv -h
 ```
 
-#Install Python 3.10
+
+# Install Python 3.10
 
 ```bash
 pyenv install 3.10
@@ -87,7 +94,8 @@ wget -q https://github.com/ushio2580/apkis/blob/main/savadata/testing.sh
 chmod +x testing.sh
 ```
 
-#Run it
+
+# Run it
 ```bash
 ./webui.sh --listen --api
 ```
