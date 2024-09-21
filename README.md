@@ -1,5 +1,5 @@
 
-# Installation For WSL + DOCKER+ WEBUI:
+# Install For WSL + DOCKER+ WEBUI:
 
 ```bash
 wsl -d ubuntu
@@ -123,5 +123,14 @@ python3 torchchat.py generate open-llama --prompt "write me a story about a boy 
 # Run Streamlit
 ```bash
 streamlit run torchchat/usages/browser.py
+```
+
+# Install for 🔎💻影片 GPT script🔎💻
+```bash
+pip install streamlit langchain openai Wikipedia tiktoken
+```
+# Run Streamlit
+```bash
+streamlit run app.py
 ```
 
