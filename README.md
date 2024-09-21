@@ -134,3 +134,8 @@ pip install streamlit langchain openai Wikipedia tiktoken
 streamlit run app.py
 ```
 
+# Checking
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
