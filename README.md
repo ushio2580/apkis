@@ -14,7 +14,8 @@ curl -fsSL https://ollama.com/install.sh | sh
 ```bash
 watch -n 0.5 nvidia-smi
 ```
-#Install Docker
+
+# Install Docker
 # Add Docker's official GPG key:
 
 ```bash
@@ -57,7 +58,8 @@ libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev git
 
 ```bash
 
-# Install Pyenv
+
+# Install Pyen
 curl https://pyenv.run | bash
 ```
 
